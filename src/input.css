@@ -18,3 +18,15 @@
   --color-purple500: hsl(235, 45%, 61%);
   --color-navy200: hsl(236, 100%, 87%);
 }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}

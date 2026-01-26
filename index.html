@@ -14,68 +14,177 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="bg-navy950 font-rubik text-navy100 min-h-screen flex flex-col justify-center items-center">
+  <main class="container mx-auto my-24 grid grid-rows-7 gap-7 md:grid-cols-4 md:grid-rows-2">
+    <div class="h-full bg-navy900 w-full rounded-md  md:row-span-2 md:col-auto">
+      <div class="bg-purpleLight flex flex-row space-x-3 rounded-md p-6 md:flex-col md:space-x-0 md:space-y-3 md:py-18 md:items-start">
+        <img src="images/image-jeremy.png" alt="Jeremy" class="h-16 w-16">
+        <div class="flex flex-col space-y-3">
+          <p class="text-base text-navy200/80">
+            Report for
+          </p>
+          <h1 class="text-2xl text-navy200 md:text-4xl">
+            Jeremy Robson
+          </h1>
+        </div>
+      </div>
+      <form action="" class="flex flex-row justify-between p-6 md:flex-col">
+        <label class="text-navy200">
+          <input type="radio" name="Date" value="Daily" class="sr-only peer">
+          <span class="text-lg peer-checked:text-white">
+            Daily
+          </span>
+        </label>
+        <label class="text-navy200">
+          <input type="radio" name="Date" value="Weekly" class="sr-only peer">
+          <span class="text-lg peer-checked:text-white">
+            Weekly
+          </span>
+        </label>
+        <label class="text-navy200">
+          <input type="radio" name="Date" value="Monthly" class="sr-only peer">
+          <span class="text-lg peer-checked:text-white">
+            Monthly
+          </span>
+        </label>
+      </form>
+    </div>
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
+    <div class="relative bg-work rounded-2xl overflow-hidden pt-10 ">
+      <div class="absolute -top-2 right-4 z-0">
+        <img src="images/icon-work.svg" alt="">
+      </div>
+      <div class="relative bg-navy900 flex flex-col space-y-3 p-6 h-full rounded-t-2xl">
+        <div class="flex flex-row justify-between">
+          <h2 class="text-lg text-white">
+            Work
+          </h2>
+          <img src="images/icon-ellipsis.svg" alt="" class="h-1">
+        </div>
+        <div class="flex flex-row justify-between md:flex-col md:space-y-6">
+          <h2 class="text-3xl text-white md:text-4xl">
+            32hrs
+          </h2>
+          <p class="text-navy200">
+            Last Week - 36hrs
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-play rounded-2xl overflow-hidden pt-10">
+      <div class="absolute -top-2 right-4 z-0">
+        <img src="images/icon-play.svg" alt="">
+      </div>
+      <div class="relative bg-navy900 flex flex-col space-y-3 p-6 h-full rounded-t-2xl">
+        <div class="flex flex-row justify-between">
+          <h2 class="text-lg text-white">
+            Play
+          </h2>
+          <img src="images/icon-ellipsis.svg" alt="" class="h-1">
+        </div>
+        <div class="flex flex-row justify-between md:flex-col md:space-y-6">
+          <h2 class="text-3xl text-white md:text-4xl">
+            10hrs
+          </h2>
+          <p class="text-navy200">
+            Last Week - 8hrs
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-study rounded-2xl overflow-hidden pt-10">
+      <div class="absolute -top-2 right-4 z-0">
+        <img src="images/icon-study.svg" alt="">
+      </div>
+      <div class="relative bg-navy900 flex flex-col space-y-3 p-6 h-full rounded-t-2xl">
+        <div class="flex flex-row justify-between">
+          <h2 class="text-lg text-white">
+            Study
+          </h2>
+          <img src="images/icon-ellipsis.svg" alt="" class="h-1">
+        </div>
+        <div class="flex flex-row justify-between md:flex-col md:space-y-6">
+          <h2 class="text-3xl text-white md:text-4xl">
+            4hrs
+          </h2>
+          <p class="text-navy200">
+            Last Week - 7hrs
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-exercise rounded-2xl overflow-hidden pt-10">
+      <div class="absolute -top-2 right-4 z-0">
+        <img src="images/icon-exercise.svg" alt="">
+      </div>
+      <div class="relative bg-navy900 flex flex-col space-y-3 p-6 h-full rounded-t-2xl">
+        <div class="flex flex-row justify-between">
+          <h2 class="text-lg text-white">
+            Exercise
+          </h2>
+          <img src="images/icon-ellipsis.svg" alt="" class="h-1">
+        </div>
+        <div class="flex flex-row justify-between md:flex-col md:space-y-6">
+          <h2 class="text-3xl text-white text-4xl">
+            4hrs
+          </h2>
+          <p class="text-navy200">
+            Last Week - 7hrs
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-social rounded-2xl overflow-hidden pt-10">
+      <div class="absolute -top-2 right-4 z-0">
+        <img src="images/icon-social.svg" alt="">
+      </div>
+      <div class="relative bg-navy900 flex flex-col space-y-3 p-6 h-full rounded-t-2xl">
+        <div class="flex flex-row justify-between">
+          <h2 class="text-lg text-white">
+            Social
+          </h2>
+          <img src="images/icon-ellipsis.svg" alt="" class="h-1">
+        </div>
+        <div class="flex flex-row justify-between md:flex-col md:space-y-6">
+          <h2 class="text-3xl text-white text-4xl">
+            5hrs
+          </h2>
+          <p class="text-navy200">
+            Last Week - 10hrs
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="relative bg-selfCare rounded-2xl overflow-hidden pt-10">
+      <div class="absolute -top-2 right-4 z-0">
+        <img src="images/icon-self-care.svg" alt="">
+      </div>
+      <div class="relative bg-navy900 flex flex-col space-y-3 p-6 h-full rounded-t-2xl">
+        <div class="flex flex-row justify-between">
+          <h2 class="text-lg text-white">
+            Self Care
+          </h2>
+          <img src="images/icon-ellipsis.svg" alt="" class="h-1">
+        </div>
+        <div class="flex flex-row justify-between md:flex-col md:space-y-6">
+          <h2 class="text-3xl text-white md:text-4xl">
+            2hrs
+          </h2>
+          <p class="text-navy200">
+            Last Week - 2hrs
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Henry-pixel-dev">Henry Ifeanyi</a>.
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
