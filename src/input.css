@@ -1,11 +1,20 @@
-Time Tracking DashBoard - Main
- --design
- --images
- --src
- --TIme-tracking-dashboard
- --.gitnore
- --data.json
- --index.html
- --README.md
- --README-template.md
- --style-guide.md
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-purpleLight: hsl(246, 80%, 60%); /* Purple 600 */
+
+  /* Task colors */
+  --color-work: hsl(15, 100%, 70%);        /* Orange 300 */
+  --color-play: hsl(195, 74%, 62%);        /* Blue 300 */
+  --color-study: hsl(348, 100%, 68%);      /* Pink 400 */
+  --color-exercise: hsl(145, 58%, 55%);    /* Green 400 */
+  --color-social: hsl(264, 64%, 52%);      /* Purple 700 */
+  --color-selfCare: hsl(43, 84%, 65%);     /* Yellow 300 */
+
+  /* Neutral shades */
+  --color-navy950: hsl(226, 43%, 10%);
+  --color-navy900: hsl(235, 46%, 20%);
+  --color-purple500: hsl(235, 45%, 61%);
+  --color-navy200: hsl(236, 100%, 87%);
+}
