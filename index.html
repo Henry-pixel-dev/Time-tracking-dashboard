@@ -30,19 +30,19 @@
       </div>
       <form action="" class="flex flex-row justify-between p-6 md:flex-col">
         <label class="text-navy200">
-          <input type="radio" name="Date" value="Daily" class="sr-only peer">
+          <input type="radio" name="Date" value="daily" class="sr-only peer">
           <span class="text-lg peer-checked:text-white">
             Daily
           </span>
         </label>
         <label class="text-navy200">
-          <input type="radio" name="Date" value="Weekly" class="sr-only peer">
+          <input type="radio" name="Date" value="weekly" class="sr-only peer">
           <span class="text-lg peer-checked:text-white">
             Weekly
           </span>
         </label>
         <label class="text-navy200">
-          <input type="radio" name="Date" value="Monthly" class="sr-only peer">
+          <input type="radio" name="Date" value="monthly" class="sr-only peer">
           <span class="text-lg peer-checked:text-white">
             Monthly
           </span>
@@ -62,11 +62,11 @@
           <img src="images/icon-ellipsis.svg" alt="" class="h-1">
         </div>
         <div class="flex flex-row justify-between md:flex-col md:space-y-6">
-          <h2 class="text-3xl text-white md:text-4xl">
-            32hrs
+          <h2  class="text-3xl text-white md:text-4xl">
+            <span id="currentWorkTime">32</span>hrs
           </h2>
           <p class="text-navy200">
-            Last Week - 36hrs
+            Last Week - <span id="perviousWorkTime">36</span>hrs
           </p>
         </div>
       </div>
@@ -83,11 +83,11 @@
           <img src="images/icon-ellipsis.svg" alt="" class="h-1">
         </div>
         <div class="flex flex-row justify-between md:flex-col md:space-y-6">
-          <h2 class="text-3xl text-white md:text-4xl">
-            10hrs
+          <h2  class="text-3xl text-white md:text-4xl">
+            <span id="currentPlayTime">10</span>hrs
           </h2>
           <p class="text-navy200">
-            Last Week - 8hrs
+            Last Week - <span id="perivousPlayTime">8</span>hrs
           </p>
         </div>
       </div>
@@ -105,10 +105,10 @@
         </div>
         <div class="flex flex-row justify-between md:flex-col md:space-y-6">
           <h2 class="text-3xl text-white md:text-4xl">
-            4hrs
+            <span id="currentStudyTime">4</span>hrs
           </h2>
           <p class="text-navy200">
-            Last Week - 7hrs
+            Last Week - <span id="perivousStudyTime">7</span>hrs
           </p>
         </div>
       </div>
@@ -126,10 +126,10 @@
         </div>
         <div class="flex flex-row justify-between md:flex-col md:space-y-6">
           <h2 class="text-3xl text-white text-4xl">
-            4hrs
+            <span id="currentExerciseTime">4</span>hrs
           </h2>
           <p class="text-navy200">
-            Last Week - 7hrs
+            Last Week - <span id="perivousExerciseTime">7</span>hrs
           </p>
         </div>
       </div>
@@ -147,10 +147,10 @@
         </div>
         <div class="flex flex-row justify-between md:flex-col md:space-y-6">
           <h2 class="text-3xl text-white text-4xl">
-            5hrs
+            <span id="currentSocialTime">5</span>hrs
           </h2>
           <p class="text-navy200">
-            Last Week - 10hrs
+            Last Week - <span id="perivousSocialTime">10</span>hrs
           </p>
         </div>
       </div>
@@ -168,10 +168,10 @@
         </div>
         <div class="flex flex-row justify-between md:flex-col md:space-y-6">
           <h2 class="text-3xl text-white md:text-4xl">
-            2hrs
+            <span id="currentSelfcareTime">2</span>hrs
           </h2>
           <p class="text-navy200">
-            Last Week - 2hrs
+            Last Week - <span id="perivousSelfcareTime">2</span>hrs
           </p>
         </div>
       </div>
@@ -182,7 +182,7 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://www.frontendmentor.io/profile/Henry-pixel-dev">Henry Ifeanyi</a>.
+      Coded by <a href="#">Henry Ifeanyi</a>.
     </div>
   </footer>
 
