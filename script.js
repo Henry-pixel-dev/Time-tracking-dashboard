@@ -1,15 +1,3 @@
-const currentWorkTime = document.querySelector('#currentWorkTime');
-const perviousWorkTime = document.querySelector('#perviousWorkTime');
-const currentPlayTime = document.querySelector('#currentPlayTime');
-const perivousPlayTime = document.querySelector('#perivousPlayTime');
-const currentStudyTime = document.querySelector('#currentStudyTime');
-const perivousStudyTime = document.querySelector('#perivousStudyTime');
-const currentExerciseTime = document.querySelector('#currentExerciseTime');
-const perivousExerciseTime = document.querySelector('#perivousExerciseTime');
-const currentSocialTime = document.querySelector('#currentSocialTime');
-const perivousSocialTime = document.querySelector('#perivousSocialTime');
-const currentSelfcareTime = document.querySelector('#currentSelfcareTime');
-const perivousSelfcareTime = document.querySelector('#perivousSelfcareTime');
 const radios = document.querySelectorAll('input[name="Date"]')
 
 let data = null;
@@ -42,59 +30,14 @@ function updateTimeframe(selectedTimeframe) {
     renderCards(cards)
 }
 
+
+
 function renderCards(cards) {
   cards.forEach(card => {
-    switch (card.title) {
-      case 'Work':
-        currentWorkTime.textContent = card.current;
-        perviousWorkTime.textContent = card.previous;
-        break;
-      case 'Play':
-        currentPlayTime.textContent = card.current;
-        perivousPlayTime.textContent = card.previous;
-        break;
-      case 'Study':
-        currentStudyTime.textContent = card.current;
-        perivousStudyTime.textContent = card.previous;
-        break;
-      case 'Exercise':
-        currentExerciseTime.textContent = card.current;
-        perivousExerciseTime.textContent = card.previous;
-        break;
-      case 'Social':
-        currentSocialTime.textContent = card.current;
-        perivousSocialTime.textContent = card.previous;
-        break;
-      case 'Self Care':
-        currentSelfcareTime.textContent = card.current;
-        perivousSelfcareTime.textContent = card.previous;
-        break;
-    }
-  });
-}
-
-
-radios.forEach(radio => {
-    radio.addEventListener('change', () => {
-    if (radio.checked) {
-      updateTimeframe(radio.value);
-    }
-  });
-})
-
-
-// // On page load, render the default timeframe
-// const checkedRadio = document.querySelector('input[name="timeframe"]:checked');
-// if (checkedRadio) {
-//   updateTimeframe(checkedRadio.value);
-// }
-
-
-/*
-function renderCards(cards) {
-  cards.forEach(card => {
-    const currentEl = document.getElementById(`current${card.title}Time`);
-    const previousEl = document.getElementById(`previous${card.title}Time`);
+    const key = card.title.replace(/\s/g, '');
+    
+    const currentEl = document.getElementById(`current${key}Time`);
+    const previousEl = document.getElementById(`previous${key}Time`);
     
     if (currentEl && previousEl) {
       currentEl.textContent = card.current;
@@ -102,4 +45,10 @@ function renderCards(cards) {
     }
   });
 }
-  */
+    radios.forEach(radio => {
+        radio.addEventListener('change', () => {
+        if (radio.checked) {
+          updateTimeframe(radio.value);
+        }
+      });
+    })
